@@ -40,4 +40,9 @@ Verify finra:document has created
 Run project using springboot:run
 Launch http://localhost:8081 and upload document using form
 
+#### Validation
+
+You can validate the uploaded file from Alfresco Share or using below CMIS query
+
+http://localhost:8080/alfresco/api/-default-/public/cmis/versions/1.1/browser/?cmisselector=query&succinct=true&q=select%20*%20from%20finra:document
 

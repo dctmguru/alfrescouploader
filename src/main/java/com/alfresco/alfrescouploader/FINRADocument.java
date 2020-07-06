@@ -95,9 +95,8 @@ public class FINRADocument {
 		 
     
 	    //Set Object type
-		properties.put(PropertyIds.OBJECT_TYPE_ID, Constants.TYPE_CMIS_DOCUMENT);
+		properties.put(PropertyIds.OBJECT_TYPE_ID, Constants.FINRA_TYPE);
 		
-		//properties.put("cmis:secondaryObjectTypeIds", Arrays.asList(new String[] {Constants.FINRA_TYPE}));
 		//Set cmis:name
         properties.put(PropertyIds.NAME, file.getOriginalFilename());
         
@@ -109,13 +108,9 @@ public class FINRADocument {
 		
 		log.debug("getAspectProp");
 		//Init properties Hashmap
-		HashMap<String, Object> properties = new HashMap<String, Object>();				 
+		HashMap<String, Object> properties = new HashMap<String, Object>();			 
     
-		properties.put(PropertyIds.SECONDARY_OBJECT_TYPE_IDS, Arrays.asList(new String[] {Constants.FINRA_ASPECT}));
-		
-		//Set cmis:name
-       // properties.put(PropertyIds.NAME, file.getOriginalFilename());
-        
+	  
         //Set ranking
         if(this.getRating() != null && ! this.getRating().equalsIgnoreCase("")) {
         	properties.put(FINRA_RATING, this.getRating());

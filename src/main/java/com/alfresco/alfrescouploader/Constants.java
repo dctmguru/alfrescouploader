@@ -12,7 +12,7 @@ package com.alfresco.alfrescouploader;
  */
 public class Constants {
 
-	public static final String FINRA_ASPECT="finra:document";
+	public static final String FINRA_TYPE="D:finra:document";
 	public static final String TYPE_CMIS_DOCUMENT = "cmis:document";
 	public static final String ASPECT = "";
 	
