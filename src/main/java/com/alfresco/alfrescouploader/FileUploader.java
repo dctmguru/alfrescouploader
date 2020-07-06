@@ -46,13 +46,7 @@ public class FileUploader {
 	public ResponseEntity<Object> uploadFile(@RequestParam(required=true, value="file") MultipartFile file, @RequestParam(required=true, value="jsondata")String jsondata) throws Exception  {
 		
 		log.info("Uploading document");
-    	
-		//File convertFile = new File(""+file.getOriginalFilename());
-		//convertFile.createNewFile();
-		//FileOutputStream fout = new FileOutputStream(convertFile);
-		//fout.write(file.getBytes());
-		///fout.close();
-		
+ 		
 		log.debug(jsondata.toString());
 		
 		FINRADocument finraDocument = objectMapper.readValue(jsondata, FINRADocument.class);
