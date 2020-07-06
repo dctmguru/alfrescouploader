@@ -111,7 +111,7 @@ public class FINRADocument {
 		//Init properties Hashmap
 		HashMap<String, Object> properties = new HashMap<String, Object>();				 
     
-		properties.put("cmis:secondaryObjectTypeIds", Arrays.asList(new String[] {Constants.FINRA_ASPECT}));
+		properties.put(PropertyIds.SECONDARY_OBJECT_TYPE_IDS, Arrays.asList(new String[] {Constants.FINRA_ASPECT}));
 		
 		//Set cmis:name
        // properties.put(PropertyIds.NAME, file.getOriginalFilename());
